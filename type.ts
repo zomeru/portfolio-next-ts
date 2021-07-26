@@ -5,3 +5,8 @@ export interface IService {
   about: string;
   Icon: IconType;
 }
+export interface ISKill {
+  name: string;
+  level: string;
+  Icon: IconType;
+}
