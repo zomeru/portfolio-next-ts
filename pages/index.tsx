@@ -7,14 +7,14 @@ interface indexProps {}
 
 const index: React.FC<indexProps> = () => {
   return (
-    <div className='flex flex-col flex-grow px-6 pt-1'>
+    <div className='flex flex-col flex-grow px-6 pt-1 dark:text-gray-400'>
       <h5 className='my-3 font-medium'>
         I am currently pursuing a bachelors degree in Information Technology
         (3rd Year) from STI College Alabang. I love to build full stack
         applications that live on the web.
       </h5>
       <div
-        className='flex-grow p-4 mt-5 bg-gray-400'
+        className='flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100'
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
       >
         <h6 className='my-3 text-xl font-bold tracking-wide'>What I Offer</h6>
@@ -22,7 +22,7 @@ const index: React.FC<indexProps> = () => {
           {services.map(service => (
             <div
               key={service.title}
-              className='bg-gray-200 rounded-lg lg:col-span-1'
+              className='bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1'
             >
               <ServiceCard service={service} />
             </div>

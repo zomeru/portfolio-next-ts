@@ -10,7 +10,7 @@ const resume: React.FC<resumeProps> = ({}) => {
       <div className='grid gap-6 md:grid-cols-2'>
         <div>
           <h5 className='my-3 text-2xl font-bold'>Education</h5>
-          <div>
+          <div className='dark:text-gray-400'>
             <h5 className='my-2 text-xl font-bold'>Information Technology</h5>
             <p className='font-semibold'>STI College Alabang (2019 - 2023)</p>
             <p className='my-3'>
@@ -21,7 +21,7 @@ const resume: React.FC<resumeProps> = ({}) => {
         </div>
         <div>
           <h5 className='my-3 text-2xl font-bold'>Experience</h5>
-          <div>
+          <div className='dark:text-gray-400'>
             <h5 className='my-2 text-xl font-bold'>Front-end Developer</h5>
             <p className='font-semibold'>Freelance (2021 - present)</p>
             <p className='my-3'>
@@ -34,7 +34,7 @@ const resume: React.FC<resumeProps> = ({}) => {
       <div className='grid gap-6 md:grid-cols-2'>
         <div>
           <h5 className='my-3 text-2xl font-bold'>Languages & Frameworks</h5>
-          <div className='my-2'>
+          <div className='my-2 dark:text-gray-300'>
             {technologies.map(tech => (
               <Bar data={tech} key={tech.name} />
             ))}
