@@ -18,7 +18,7 @@ const index: React.FC<indexProps> = () => {
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
       >
         <h6 className='my-3 text-xl font-bold tracking-wide'>What I Offer</h6>
-        <div className='grid gab-6 lg:grid-cols-2'>
+        <div className='grid gap-6 lg:grid-cols-2'>
           {services.map(service => (
             <div
               key={service.title}
