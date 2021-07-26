@@ -2,7 +2,8 @@ import { RiComputerLine } from 'react-icons/ri';
 import { FaServer } from 'react-icons/fa';
 import { AiOutlineApi } from 'react-icons/ai';
 import { MdDeveloperMode } from 'react-icons/md';
-import { IService } from './type';
+import { BsCircleFill } from 'react-icons/bs';
+import { IService, ISKill } from './type';
 
 export const services: IService[] = [
   {
@@ -27,10 +28,55 @@ export const services: IService[] = [
     title: 'Competitive Coder',
     about: 'A fast-learner and daily problem solver.',
   },
+];
+
+export const technologies: ISKill[] = [
   {
-    Icon: RiComputerLine,
-    title: 'Whatever',
-    about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!',
+    name: 'HTML5',
+    level: '90%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'Scss/CSS3',
+    level: '85%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'Javascript/Typescript',
+    level: '80%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'React.js',
+    level: '70%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'Tailwind CSS',
+    level: '70%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'Node.js',
+    level: '40%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'Git',
+    level: '80%',
+    Icon: BsCircleFill,
+  },
+];
+
+export const tools: ISKill[] = [
+  {
+    name: 'Photoshop',
+    level: '60%',
+    Icon: BsCircleFill,
+  },
+  {
+    name: 'Figma',
+    level: '50%',
+    Icon: BsCircleFill,
   },
 ];
