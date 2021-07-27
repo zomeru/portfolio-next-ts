@@ -6,6 +6,7 @@ import {
 } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 
 interface SidebarProps {}
 
@@ -18,10 +19,13 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
 
   return (
     <div>
-      <img
-        src={'https://raw.githubusercontent.com/zomeru/zomeru/main/me.png'}
-        alt={'user avatar'}
-        className='w-32 h-32 mx-auto rounded-full'
+      <Image
+        src='https://raw.githubusercontent.com/zomeru/zomeru/main/me.png'
+        alt='user avatar'
+        className='mx-auto rounded-full'
+        height='120px'
+        width='120px'
+        layout='intrinsic'
       />
       <h3 className='my-4 text-3xl font-medium tracking-wider font-opensans dark:text-gray-400'>
         <span className='text-blue'>Zomer</span>
