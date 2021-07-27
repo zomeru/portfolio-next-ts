@@ -149,7 +149,7 @@ export const projects: IProject[] = [
     name: 'Snake',
     description: 'A snake game written in Java.',
     image_path: '/images/snake.png',
-    deployed_url: '#',
+    deployed_url: '',
     github_url: 'https://github.com/zomeru/Snake',
     category: ['java'],
     tech_stack: ['Java', 'Java Swing'],
