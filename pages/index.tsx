@@ -5,9 +5,7 @@ import ServiceCard from '../components/ServiceCard';
 import { motion } from 'framer-motion';
 import { fadeInUp, routeAnimation, stagger } from '../configs/animations';
 
-interface indexProps {}
-
-const About: React.FC<indexProps> = () => {
+const About = () => {
   return (
     <motion.div
       variants={routeAnimation}
@@ -49,18 +47,18 @@ const About: React.FC<indexProps> = () => {
 
 export default About;
 
-// export const getServerSideProps = async (
-//   context: GetServerSidePropsContext
-// ) => {
-//   const res = await fetch('https://localhost:3000/api/services');
-//   const data = await res.json();
+export const getServerSideProps = async (
+  context: GetServerSidePropsContext
+) => {
+  // const res = await fetch(`${process.env.VERCEL_URL}/api/services`);
+  // const data = await res.json();
 
-//   return {
-//     props: {
-//       services: data.services,
-//     },
-//   };
-// };
+  return {
+    props: {
+      endpoint: process.env.VERCEL_URL,
+    },
+  };
+};
 
 // export const getStaticProps = async (context: GetStaticPropsContext) => {
 //   const res = await fetch('https://localhost:3000/api/services');
