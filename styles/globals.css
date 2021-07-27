@@ -8,3 +8,15 @@ body {
   font-family: sans-serif;
   color: #354358;
 }
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom, #4d5c74, #5bd6b9);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0px;
+}
+
+/* default: '#4D5C74';
+//DEFAULT: '#64ffda', */
