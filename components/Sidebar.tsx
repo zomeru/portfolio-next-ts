@@ -43,13 +43,21 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
       </a>
       {/* {Social Icons} */}
       <div className='flex justify-around w-9/12 mx-auto my-5 text-blue md:w-full'>
-        <a href=''>
+        <a href='https://github.com/zomeru' target='_blank' rel='noreferrer'>
           <AiFillGithub className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href=''>
+        <a
+          href='https://www.linkedin.com/in/zomergregorio'
+          target='_blank'
+          rel='noreferrer'
+        >
           <AiFillLinkedin className='w-8 h-8 cursor-pointer' />
         </a>
-        <a href=''>
+        <a
+          href='https://www.instagram.com/zomerusama'
+          target='_blank'
+          rel='noreferrer'
+        >
           <AiOutlineInstagram className='w-8 h-8 cursor-pointer' />
         </a>
       </div>
