@@ -42,6 +42,10 @@ function MyApp({ Component, pageProps, router }) {
           />
           <meta name='twitter:card' content='summary_large_image' />
           <meta name='twitter:creator' content='Zomer Gregorio' />
+          <meta
+            name='google-site-verification'
+            content='vIm46RcPpRP4YQjS20F6RUACLwKggpLpEwLKn3rMXVw'
+          />
         </Head>
         <div className='col-span-12 p-4 text-center bg-white lg:col-span-3 rounded-2xl dark:bg-dark-500 shadow-custom-light dark:shadow-custom-dark'>
           <Sidebar />
