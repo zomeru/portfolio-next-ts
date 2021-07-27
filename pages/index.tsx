@@ -1,13 +1,21 @@
 import { GetServerSidePropsContext, GetStaticPropsContext } from 'next';
 import React from 'react';
-import { services } from '../data';
+import { services } from '../configs/data';
 import ServiceCard from '../components/ServiceCard';
+import { motion } from 'framer-motion';
+import { fadeInUp, routeAnimation, stagger } from '../configs/animations';
 
 interface indexProps {}
 
-const index: React.FC<indexProps> = () => {
+const About: React.FC<indexProps> = () => {
   return (
-    <div className='flex flex-col flex-grow px-6 pt-1 dark:text-gray-400'>
+    <motion.div
+      variants={routeAnimation}
+      initial='initial'
+      animate='animate'
+      exit='exit'
+      className='flex flex-col flex-grow px-6 pt-1 dark:text-gray-400'
+    >
       <h5 className='my-3 font-medium'>
         I am currently pursuing a bachelors degree in Information Technology
         (3rd Year) from STI College Alabang. I love to build full stack
@@ -18,22 +26,28 @@ const index: React.FC<indexProps> = () => {
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
       >
         <h6 className='my-3 text-xl font-bold tracking-wide'>What I Offer</h6>
-        <div className='grid gap-6 lg:grid-cols-2'>
+        <motion.div
+          className='grid gap-6 lg:grid-cols-2'
+          variants={stagger}
+          initial='initial'
+          animate='animate'
+        >
           {services.map(service => (
-            <div
+            <motion.div
+              variants={fadeInUp}
               key={service.title}
               className='bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1'
             >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-export default index;
+export default About;
 
 // export const getServerSideProps = async (
 //   context: GetServerSidePropsContext
