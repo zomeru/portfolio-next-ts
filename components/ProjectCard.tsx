@@ -44,10 +44,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         style={{ width: '1366', height: 'auto' }}
         onClick={() => setShowDetail(true)}
       /> */}
-      <p className='my-2 text-center dark:text-gray-400'>{name}</p>
+      <p className='my-2 text-center text-blue dark:text-gray-400'>{name}</p>
 
       {showDetail === id && (
-        <div className='absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:pd-10 md:grid-cols-2 gap-x-12 text-b dark:bg-dark-100 dark:text-gray-400'>
+        <div className='absolute top-0 left-0 z-10 grid w-full h-auto p-2 bg-gray-100 rounded-lg text-blue md:pd-10 md:grid-cols-2 gap-x-12 text-b dark:bg-dark-100 dark:text-gray-400'>
           <motion.div variants={stagger} initial='initial' animate='animate'>
             {/* <img src={image_path} alt={name} /> */}
             <motion.div

@@ -31,12 +31,12 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
         <span className='text-blue'>Zomer</span>
         Gregorio
       </h3>
-      <p className='px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:text-gray-400'>
+      <p className='px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:text-gray-400 text-blue'>
         Full Stack Developer
       </p>
       <a
         href=''
-        className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:text-gray-400'
+        className='flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full text-blue dark:bg-dark-200 dark:text-gray-400'
         download='name'
       >
         Download Resume
@@ -54,7 +54,7 @@ const Sidebar: React.FC<SidebarProps> = ({}) => {
         </a>
       </div>
       <div
-        className='py-4 my-5 bg-gray-200 dark:bg-dark-200 dark:text-gray-400'
+        className='py-4 my-5 bg-gray-200 dark:bg-dark-200 dark:text-gray-400 text-blue'
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
         <div className='flex items-center justify-center space-x-2'>
