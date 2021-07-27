@@ -46,7 +46,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       <span className='text-xl font-bold border-b-4 text-blue border-blue md:text-2xl'>
         {activeItem}
       </span>
-      <div className='flex space-x-5 text-lg'>
+      <div className='flex space-x-5 text-lg text-gray-400'>
         <NavItem
           activeItem={activeItem}
           setActiveItem={setActiveItem}
