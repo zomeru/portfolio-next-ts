@@ -83,6 +83,7 @@ export const tools: ISKill[] = [
 
 export const projects: IProject[] = [
   {
+    id: 1,
     name: 'Zomify Colors',
     description: 'A Color Palette React App, inspired by Flat UI Colors.',
     image_path: '/images/zomify-colors.png',
@@ -92,6 +93,7 @@ export const projects: IProject[] = [
     tech_stack: ['Javascript', 'React.js', 'Material UI'],
   },
   {
+    id: 2,
     name: 'Portfolio',
     description: 'My portfolio website',
     image_path: '/images/portfolio-v2.png',
@@ -101,6 +103,7 @@ export const projects: IProject[] = [
     tech_stack: ['Javascript', 'React.js', 'Gatsby.js', 'Styled Components'],
   },
   {
+    id: 3,
     name: 'Anime Quiz',
     description: 'A simple anime quiz app made with React and Typescript',
     image_path: '/images/anime-quiz.png',
@@ -110,6 +113,7 @@ export const projects: IProject[] = [
     tech_stack: ['Typescript', 'React.js', 'Styled Components'],
   },
   {
+    id: 4,
     name: 'Forkify',
     description: 'Recipe application with custom recipe uploads.',
     image_path: '/images/forkify.png',
@@ -119,6 +123,7 @@ export const projects: IProject[] = [
     tech_stack: ['Javascript', 'Sass'],
   },
   {
+    id: 5,
     name: 'Pig Dice Game',
     description: 'A simple Pig (Dice Game) that I wrote in Javacript',
     image_path: '/images/pig-dice-game.png',
@@ -128,6 +133,7 @@ export const projects: IProject[] = [
     tech_stack: ['Javascript'],
   },
   {
+    id: 6,
     name: 'Trillo',
     description: 'An All-In-One booking app',
     image_path: '/images/trillo.png',
@@ -137,6 +143,7 @@ export const projects: IProject[] = [
     tech_stack: ['HTML', 'Sass'],
   },
   {
+    id: 7,
     name: 'Nexter',
     description: 'Nexter Landing Page',
     image_path: '/images/nexter.png',
@@ -146,6 +153,7 @@ export const projects: IProject[] = [
     tech_stack: ['HTML', 'Sass'],
   },
   {
+    id: 8,
     name: 'Snake',
     description: 'A snake game written in Java.',
     image_path: '/images/snake.png',
