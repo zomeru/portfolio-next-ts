@@ -1,5 +1,5 @@
 import React from 'react';
-import { IService } from '../type';
+import { IService } from '../configs/type';
 
 const ServiceCard: React.FC<{ service: IService }> = ({
   service: { Icon, about, title },

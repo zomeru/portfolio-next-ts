@@ -1,5 +1,5 @@
 import React from 'react';
-import { Category } from '../type';
+import { Category } from '../configs/type';
 
 interface ProjectsNavbarProps {
   filterCategoryHandler: Function;
