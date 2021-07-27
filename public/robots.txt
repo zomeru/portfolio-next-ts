@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: https://zomeru.vercel.app/api/posts-sitemap
+Host: https://zomeru.vercel.app/
+
