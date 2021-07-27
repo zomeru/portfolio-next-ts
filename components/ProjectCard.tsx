@@ -8,10 +8,13 @@ import { fadeInUp, stagger } from '../configs/animations';
 
 interface ProjectCardProps {
   project: IProject;
+  showDetail: number | null;
+  setShowDetail: (id: number | null) => void;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   project: {
+    id,
     name,
     description,
     image_path,
@@ -20,16 +23,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     category,
     tech_stack,
   },
+  showDetail,
+  setShowDetail,
 }) => {
-  const [showDetail, setShowDetail] = useState(false);
-
   return (
     <div>
       <Image
         src={image_path}
         alt={name}
         className='cursor-pointer'
-        onClick={() => setShowDetail(true)}
+        onClick={() => setShowDetail(id)}
         width='300'
         height='150'
         layout='responsive'
@@ -43,11 +46,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       /> */}
       <p className='my-2 text-center dark:text-gray-400'>{name}</p>
 
-      {showDetail && (
-        <div className='absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 text-b dark:bg-dark-100 dark:text-gray-400'>
+      {showDetail === id && (
+        <div className='absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:pd-10 md:grid-cols-2 gap-x-12 text-b dark:bg-dark-100 dark:text-gray-400'>
           <motion.div variants={stagger} initial='initial' animate='animate'>
             {/* <img src={image_path} alt={name} /> */}
-            <motion.div variants={fadeInUp}>
+            <motion.div
+              variants={fadeInUp}
+              className='border-4 border-gray-100'
+            >
               <Image
                 src={image_path}
                 alt={name}
@@ -99,7 +105,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </motion.div>
           </motion.div>
           <button
-            onClick={() => setShowDetail(false)}
+            onClick={() => setShowDetail(null)}
             className='absolute bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200'
           >
             <MdClose size={30} />
