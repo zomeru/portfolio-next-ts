@@ -10,13 +10,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to right bottom, #4d5c74, #5bd6b9);
+  background-color: #57a190;
+  /* background-image: linear-gradient(to right bottom, #4d5c74, #5bd6b9); */
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
   height: 0px;
 }
-
-/* default: '#4D5C74';
-//DEFAULT: '#64ffda', */
