@@ -3,7 +3,7 @@ module.exports = {
   images: {
     domains: ['raw.githubusercontent.com'],
   },
-  async redirect() {
+  async redirects() {
     return [
       {
         source: '/',
