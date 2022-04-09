@@ -3,4 +3,13 @@ module.exports = {
   images: {
     domains: ['raw.githubusercontent.com'],
   },
+  async redirect() {
+    return [
+      {
+        source: '/',
+        destination: 'https://zomer.xyz',
+        permanent: false,
+      },      
+    ]
+  }
 };
